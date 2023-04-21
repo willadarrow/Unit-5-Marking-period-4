@@ -30,19 +30,29 @@
      vertical-align: top;
      }
      
-  p1:hover{
-   background-color: #44413F; 
-   border: none;
-   color: white;
-   padding: 100px 100px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   border-radius: 2px;
-   transition-duration: 0.4s;
+      .btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #44413F ;
+}
   
-  }
+  
+  
      
     </style>
 <body>    
@@ -52,8 +62,16 @@
 </div>
 
  <h1>calories i burn talking</h1>
+  
+  
+  <div class="btn-group">
+  <button class="button">Ep 1</button>
+  <button class="button">Ep 2</button>
+  <button class="button">Ep 3</button>
+  <button class="button">Ep 4</button>
+</div>
 
- <p1>Ep 1<p1>
+ 
 
 </body>
 </html>
